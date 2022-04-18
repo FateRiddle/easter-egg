@@ -1,0 +1,8 @@
+**/*.js
+# 仅 lint src 目录
+!src/**/*.js
+!src/**/*.jsx
+# 排除 base & mpi_css 目录
+src/widgets/base/**
+src/widgets/css/**
+vendor/base/**

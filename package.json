@@ -1,0 +1,66 @@
+{
+  "name": "h5-easter-egg-2019",
+  "version": "1.0.0",
+  "description": "2019双十一彩蛋 based on React",
+  "author": {
+    "name": "呐萨",
+    "email": "nasa.wy@alibaba-inc.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/trip/h5-easter-egg-2019"
+  },
+  "lib": "react",
+  "clam2Version": "1.6.90",
+  "useRedux": false,
+  "mobile": true,
+  "type": "web",
+  "keywords": [
+    "clam",
+    "react",
+    "16+",
+    "h5-easter-egg-2019"
+  ],
+  "group": "trip",
+  "clam": {
+    "useCdnCache": true
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-ali": "^3.0.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "react-hot-loader": "^4.8.2"
+  },
+  "dependencies": {
+    "@ali/alitrip-base": "0.3.75",
+    "@ali/alitrip-react": "16.8.4",
+    "@ali/rmpi-loading": "^1.0.3",
+    "@ali/rmpi-modal": "^1.0.5",
+    "@ali/rmpi-overlay": "^1.0.3",
+    "@ali/rmpi-tappable": "^1.0.0",
+    "@ali/webar.js": "^0.3.12",
+    "@alife/css": "^2.2.18",
+    "@tensorflow/tfjs-converter": "0.2.1",
+    "@tensorflow/tfjs-core": "^1.2.11",
+    "jsonp": "^0.2.1",
+    "prop-types": "^15.7.2",
+    "react-lottie": "^1.2.3",
+    "regenerator-runtime": "^0.12.1"
+  },
+  "basePath": "pages/home/index.html",
+  "baseUrl": "/trip/easter-egg-2019/home/index.html",
+  "toolkit": "@ali/clam-toolkit-rm",
+  "commandType": "clam",
+  "defPublishType": "awp",
+  "offlineTargets": {
+    "trip": true,
+    "taobao": false,
+    "alipay": false
+  }
+}

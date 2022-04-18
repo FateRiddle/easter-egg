@@ -1,0 +1,127 @@
+@import '~@alife/css/scss/mpi-mixins';
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  // animation: colorchange 10s;
+  background-color: #ffc900;
+
+  .title {
+    margin-top: rem(180);
+    font-size: rem(72);
+    color: #ffffff;
+  }
+
+  .feizhu-icon {
+    margin-top: rem(34);
+    width: rem(180);
+    height: rem(240);
+    background: url('https://gw.alicdn.com/tfs/TB1wh1SkebviK0jSZFNXXaApXXa-180-240.png') no-repeat
+      center center;
+    background-size: cover;
+    margin-bottom: rem(52);
+  }
+
+  .description {
+    width: rem(560);
+    text-align: center;
+    height: rem(52);
+    font-size: rem(36);
+    line-height: rem(52);
+    color: #ffffff;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: rem(40);
+    padding-left: rem(96);
+    width: rem(444);
+    height: rem(116);
+    line-height: rem(66);
+    border-radius: rem(74);
+    font-size: rem(48);
+    color: #ffffff;
+    background-color: #a3400a;
+  }
+
+  .camera-icon {
+    margin-left: rem(60);
+    width: rem(62);
+    height: rem(54);
+    background: url('https://gw.alicdn.com/tfs/TB1ZvVsk4D1gK0jSZFyXXciOVXa-62-54.png') no-repeat
+      center center;
+    background-size: cover;
+  }
+
+  .dialog-content {
+    width: rem(432);
+    height: rem(48);
+    font-size: rem(48);
+    color: #000000;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: rem(8) solid orange;
+    white-space: nowrap;
+    animation: typing 1s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: rem(432);
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    background: #ffc900;
+  }
+  25% {
+    background: #ffd700;
+  }
+  50% {
+    background: #ffff00;
+  }
+  75% {
+    background: #f0e68c;
+  }
+  100% {
+    background: #ffc900;
+  }
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    background: #ffc900;
+  }
+  25% {
+    background: #ffd700;
+  }
+  50% {
+    background: #ffff00;
+  }
+  75% {
+    background: #f0e68c;
+  }
+  100% {
+    background: #ffc900;
+  }
+}

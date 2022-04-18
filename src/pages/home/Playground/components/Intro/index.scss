@@ -1,0 +1,63 @@
+@import '~@alife/css/scss/mpi-mixins';
+
+.intro {
+  height: rem(935);
+  margin-top: rem(60);
+  width: rem(635);
+  border: rem(6) solid #111;
+  background: url('https://gw.alicdn.com/tfs/TB1ScNFl8v0gK0jSZKbXXbK2FXa-635-935.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .object-img {
+    margin-top: rem(210);
+    height: rem(360);
+    width: rem(400);
+  }
+  .intro-text {
+    margin-top: rem(110);
+    color: #3c2f26;
+    font-size: rem(60);
+    height: rem(60);
+  }
+  .intro-text2 {
+    margin-top: rem(30);
+    color: #3c2f26;
+    font-size: rem(60);
+    height: rem(60);
+  }
+  .text-red {
+    color: #ca362d;
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.1);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.1);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+
+.heartBeat {
+  animation-delay: 1s;
+  animation-name: heartBeat;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}

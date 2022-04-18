@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@import '~@alife/css/scss/mpi-mixins';
+
+.debug * {
+  outline: 1px solid gold;
+}
+
+.rank-list-container {
+  width: 100%;
+  height: 100%;
+}
+.nickname-input-container {
+  position: absolute;
+  z-index: 103;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.nickname-input-content {
+  width: rem(420);
+  height: rem(120);
+  background-color: #fff;
+  border-radius: rem(20);
+  padding: rem(20);
+  @include flexbox();
+  @include justify-content(space-between);
+  @include align-items(center);
+  .nickname-input {
+    color: #3d3d3d;
+    height: rem(60);
+    width: rem(260);
+    font-size: rem(30);
+    border: 1px solid #e0e0e0;
+    border-radius: rem(10);
+    padding-left: rem(10);
+    outline: none;
+  }
+  .input-nick-confirm {
+    width: rem(130);
+    height: rem(60);
+    color: #b52a1c;
+    background: -webkit-linear-gradient(top, #fff1af, #ffc049 100%);
+    background: linear-gradient(to bottom, #fff1af 0%, #ffc049 100%);
+    border-radius: rem(60);
+    text-align: center;
+    line-height: rem(60);
+    position: relative;
+    &::after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      background: -webkit-linear-gradient(top, #fcde87 10%, #fd7624 90%);
+      background: linear-gradient(to bottom, #fcde87 10%, #fd7624 90%);
+      border-radius: rem(64);
+    }
+  }
+}
+
+.replay-container {
+  // display: none;
+  position: absolute;
+  z-index: 103;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  .replay-box {
+    .control-container {
+      @include flexbox();
+      @include justify-content(center);
+      margin-top: rem(15);
+      .control-btn {
+        width: rem(120);
+        color: #3d3d3d;
+        font-size: rem(26);
+        font-weight: bolder;
+        margin: 0 rem(20);
+        text-align: center;
+        .replay-btn {
+          display: block;
+          width: rem(100);
+          height: rem(100);
+          margin-bottom: rem(20);
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .share-btn {
+          display: block;
+          width: rem(100);
+          height: rem(100);
+          margin-bottom: rem(20);
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+
+.close-btn-container {
+  width: rem(60);
+  height: rem(60);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  right: rem(-30);
+  top: rem(-30);
+  .close-btn {
+    width: 100%;
+    height: 100%;
+    background: center center no-repeat
+      url(//gw.alicdn.com/tfs/TB1l61koxTpK1RjSZFKXXa2wXXa-200-200.png);
+    background-size: rem(50);
+  }
+}
+
+.rank-list {
+  // display: none;
+  width: rem(450);
+  height: rem(700);
+  background-color: #fff;
+  border-radius: rem(20);
+  padding: rem(20);
+  overflow: hidden;
+  // margin-right: rem(50);
+  .rank-title {
+    font-size: rem(35);
+    color: #3d3d3d;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: rem(10);
+    margin-bottom: rem(25);
+  }
+  .rank-project {
+    @include flexbox();
+    @include justify-content(space-between);
+    font-size: rem(30);
+    font-weight: bolder;
+    color: #3d3d3d;
+    margin-bottom: rem(20);
+  }
+  .rank-ul {
+    overflow-y: auto;
+    height: rem(600);
+    .rank-li {
+      margin-bottom: rem(16);
+      line-height: rem(50);
+      @include flexbox();
+      @include justify-content(space-between);
+      &.first {
+        height: rem(50);
+        margin-bottom: rem(20);
+        background: left center no-repeat
+          url(http://gw.daily.taobaocdn.net/tps/TB14Ff6Xow7LKJjyzdKXXaShXXa-200-200.png);
+        background-size: rem(40);
+        padding-left: rem(50);
+        > .nick-name {
+          font-size: rem(30);
+          font-weight: bolder;
+          color: #ff2222;
+        }
+        > .max-score {
+          font-size: rem(30);
+          font-weight: bolder;
+          color: #ff2222;
+        }
+      }
+      &.second {
+        height: rem(50);
+        margin-bottom: rem(20);
+        background: left center no-repeat
+          url(http://gw.daily.taobaocdn.net/tps/TB16Xf6Xow7LKJjyzdKXXaShXXa-200-200.png);
+        background-size: rem(40);
+        line-height: rem(50);
+        padding-left: rem(50);
+        > .nick-name {
+          font-size: rem(30);
+          font-weight: bolder;
+        }
+        > .max-score {
+          font-size: rem(30);
+          font-weight: bolder;
+        }
+      }
+      &.third {
+        height: rem(50);
+        margin-bottom: rem(20);
+        background: left center no-repeat
+          url(http://gw.daily.taobaocdn.net/tps/TB15Xf6Xow7LKJjyzdKXXaShXXa-200-200.png);
+        background-size: rem(40);
+        line-height: rem(50);
+        padding-left: rem(50);
+        > .nick-name {
+          font-size: rem(30);
+          font-weight: bolder;
+        }
+        > .max-score {
+          font-size: rem(30);
+          font-weight: bolder;
+        }
+      }
+      .rank-num {
+        border-radius: 50%;
+        width: rem(30);
+        color: #3d3d3d;
+        font-size: rem(25);
+        text-align: center;
+        margin-left: rem(6);
+        margin-right: rem(14);
+      }
+      .nick-name {
+        display: inline-block;
+        color: #3d3d3d;
+        line-height: rem(50);
+        font-size: rem(30);
+        max-width: rem(170);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .max-score {
+        display: inline-block;
+        @include flex(1);
+        width: rem(100);
+        color: #3d3d3d;
+        font-size: rem(30);
+        text-align: right;
+      }
+    }
+  }
+}

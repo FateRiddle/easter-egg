@@ -1,0 +1,44 @@
+@import '~@alife/css/scss/mpi-mixins';
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding-top: rem(78);
+  width: 100%;
+  height: rem(248);
+  z-index: 2;
+  box-sizing: border-box;
+
+  .footer-dialog {
+    position: absolute;
+    left: rem(76);
+    top: 0;
+    padding-top: rem(22);
+    padding-left: rem(52);
+    width: rem(440);
+    height: rem(156);
+    font-size: rem(48);
+    color: #111;
+    background: url('https://gw.alicdn.com/tfs/TB1Ly5KkWL7gK0jSZFBXXXZZpXa-444-158.png') no-repeat
+      center center;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+
+  // .footer-feizhu {
+  //   position: absolute;
+  //   right: rem(24);
+  //   top: 0;
+  //   width: rem(180);
+  //   height: rem(240);
+  //   background: url('https://gw.alicdn.com/tfs/TB1wh1SkebviK0jSZFNXXaApXXa-180-240.png') no-repeat
+  //     center center;
+  //   background-size: cover;
+  // }
+
+  // .footer-bar {
+  //   width: 100%;
+  //   height: rem(170);
+  //   background-color: #a3400a;
+  // }
+}

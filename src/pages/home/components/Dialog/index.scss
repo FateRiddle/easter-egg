@@ -1,0 +1,38 @@
+@import '~@alife/css/scss/mpi-mixins';
+
+.chat-bubble {
+  position: relative;
+  margin-top: rem(80);
+  padding-left: rem(20);
+  padding-top: rem(36);
+  width: rem(460);
+  height: rem(80);
+  font-size: rem(40);
+  border: rem(3) solid #666;
+  border-radius: rem(20);
+  box-shadow: 0 0 rem(10) #888;
+  color: #111111;
+  background-color: #ededed;
+}
+
+.chat-bubble-arrow-border {
+  border-color: #666 transparent transparent transparent;
+  border-style: solid;
+  border-width: rem(20);
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: rem(-43);
+  right: rem(50);
+}
+
+.chat-bubble-arrow {
+  border-color: #ededed transparent transparent transparent;
+  border-style: solid;
+  border-width: rem(20);
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: rem(-36);
+  right: rem(50);
+}
